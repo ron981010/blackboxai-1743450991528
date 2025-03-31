@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - ARNEZ MIRANDA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body { font-family: 'Roboto', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Poppins', sans-serif; }
+        .form-input { transition: all 0.3s ease; }
+        .form-input:focus { box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5); }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div id="header-placeholder"></div>
+
+    <main class="pt-24">
+        <!-- Hero Section -->
+        <section class="relative py-20 bg-[url('https://images.pexels.com/photos/380768/pexels-photo-380768.jpeg')] bg-cover bg-center">
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+            <div class="relative z-10 max-w-6xl mx-auto px-4">
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Contáctenos</h1>
+                <p class="text-xl text-white max-w-2xl">Estamos listos para hacer realidad su proyecto</p>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="py-20 px-4">
+            <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Envíenos un mensaje</h2>
+                    <form id="contactForm" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Nombre completo</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg form-input focus:outline-none focus:border-blue-500">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Correo electrónico</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg form-input focus:outline-none focus:border-blue-500">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-gray-700 font-medium mb-2">Teléfono</label>
+                            <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg form-input focus:outline-none focus:border-blue-500">
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-gray-700 font-medium mb-2">Asunto</label>
+                            <select id="subject" name="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg form-input focus:outline-none focus:border-blue-500">
+                                <option value="consulta">Consulta general</option>
+                                <option value="presupuesto">Solicitud de presupuesto</option>
+                                <option value="trabajo">Oportunidad de trabajo</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 border border-gray-300 rounded-lg form-input focus:outline-none focus:border-blue-500"></textarea>
+                        </div>
+                        <button type="submit" class="w-full px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition flex items-center justify-center">
+                            <span id="submitText">Enviar mensaje</span>
+                            <div id="spinner" class="hidden ml-2">
+                                <i class="fas fa-circle-notch fa-spin"></i>
+                            </div>
+                        </button>
+                    </form>
+                </div>
+
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Información de contacto</h2>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="text-blue-600 text-2xl mr-4 mt-1">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold mb-1">Oficina principal</h3>
+                                <p class="text-gray-600">Av. Arnez Miranda #1234, Zona Sopocachi<br>La Paz, Bolivia</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-blue-600 text-2xl mr-4 mt-1">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold mb-1">Teléfonos</h3>
+                                <p class="text-gray-600">+591 2 2777777<br>+591 700 12345</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-blue-600 text-2xl mr-4 mt-1">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold mb-1">Correo electrónico</h3>
+                                <p class="text-gray-600">info@arnezmiranda.com.bo<br>ventas@arnezmiranda.com.bo</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-blue-600 text-2xl mr-4 mt-1">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold mb-1">Horario de atención</h3>
+                                <p class="text-gray-600">Lunes a Viernes: 8:00 - 18:00<br>Sábados: 9:00 - 12:00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-12">
+                        <h3 class="text-xl font-bold mb-4">Síganos en redes sociales</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-blue-400 text-white rounded-full flex items-center justify-center hover:bg-blue-500 transition">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-pink-600 text-white rounded-full flex items-center justify-center hover:bg-pink-700 transition">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-blue-700 text-white rounded-full flex items-center justify-center hover:bg-blue-800 transition">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="pb-20 px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h2 class="text-2xl font-bold mb-6">Nuestra ubicación</h2>
+                    <div class="aspect-w-16 aspect-h-9">
+                        <img src="https://maps.googleapis.com/maps/api/staticmap?center=Av.Arnez+Miranda,La+Paz,Bolivia&zoom=15&size=800x400&maptype=roadmap&markers=color:red%7CAv.Arnez+Miranda,La+Paz,Bolivia&key=YOUR_API_KEY" alt="Mapa de ubicación" class="w-full h-full object-cover rounded-lg">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitText = document.getElementById('submitText');
+            const spinner = document.getElementById('spinner');
+            
+            submitText.textContent = 'Enviando...';
+            spinner.classList.remove('hidden');
+            
+            // Simulate form submission
+            setTimeout(() => {
+                submitText.textContent = 'Mensaje enviado';
+                spinner.classList.add('hidden');
+                
+                // Reset form after 2 seconds
+                setTimeout(() => {
+                    this.reset();
+                    submitText.textContent = 'Enviar mensaje';
+                }, 2000);
+            }, 1500);
+        });
+    </script>
+</body>
+</html>
