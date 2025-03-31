@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Proyectos - ARNEZ MIRANDA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body { font-family: 'Roboto', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Poppins', sans-serif; }
+        .project-item { transition: transform 0.3s ease; }
+        .project-item:hover { transform: translateY(-5px); }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div id="header-placeholder"></div>
+
+    <main class="pt-24">
+        <!-- Hero Section -->
+        <section class="relative py-20 bg-[url('https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg')] bg-cover bg-center">
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+            <div class="relative z-10 max-w-6xl mx-auto px-4">
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Nuestros Proyectos</h1>
+                <p class="text-xl text-white max-w-2xl">Más de 150 proyectos completados con excelencia</p>
+            </div>
+        </section>
+
+        <!-- Portfolio Filter -->
+        <section class="py-12 bg-white shadow-sm">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="flex flex-wrap justify-center gap-4">
+                    <button class="px-4 py-2 bg-blue-600 text-white rounded-lg filter-btn active" data-filter="all">Todos</button>
+                    <button class="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded-lg filter-btn" data-filter="residencial">Residencial</button>
+                    <button class="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded-lg filter-btn" data-filter="comercial">Comercial</button>
+                    <button class="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded-lg filter-btn" data-filter="industrial">Industrial</button>
+                    <button class="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded-lg filter-btn" data-filter="remodelacion">Remodelación</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Grid -->
+        <section class="py-20 px-4">
+            <div class="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-item" data-category="residencial">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg" alt="Residencia Las Lomas" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Residencia Las Lomas</h3>
+                            <p class="text-gray-600 mb-4">Vivienda unifamiliar de 350m² en zona exclusiva de La Paz</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm text-blue-600">Residencial</span>
+                                <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Ver detalles →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-item" data-category="comercial">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg" alt="Centro Comercial Miraflores" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Centro Comercial Miraflores</h3>
+                            <p class="text-gray-600 mb-4">Complejo comercial de 12,000m² con 50 locales</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm text-blue-600">Comercial</span>
+                                <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Ver detalles →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-item" data-category="industrial">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://images.pexels.com/photos/159306/construction-site-build-construction-work-159306.jpeg" alt="Planta Industrial Santa Cruz" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Planta Industrial Santa Cruz</h3>
+                            <p class="text-gray-600 mb-4">Nave industrial de 8,000m² para producción alimenticia</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm text-blue-600">Industrial</span>
+                                <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Ver detalles →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-item" data-category="remodelacion">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg" alt="Remodelación Hotel Presidente" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Remodelación Hotel Presidente</h3>
+                            <p class="text-gray-600 mb-4">Renovación completa de 120 habitaciones y áreas comunes</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm text-blue-600">Remodelación</span>
+                                <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Ver detalles →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-item" data-category="residencial">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://images.pexels.com/photos/2587054/pexels-photo-2587054.jpeg" alt="Condominio Los Pinos" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Condominio Los Pinos</h3>
+                            <p class="text-gray-600 mb-4">Complejo de 20 departamentos en zona sur de La Paz</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm text-blue-600">Residencial</span>
+                                <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Ver detalles →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-item" data-category="comercial">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg" alt="Edificio Corporativo Megacenter" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Edificio Corporativo Megacenter</h3>
+                            <p class="text-gray-600 mb-4">Torre de oficinas clase A de 15 pisos en Santa Cruz</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm text-blue-600">Comercial</span>
+                                <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Ver detalles →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="py-20 bg-gray-100 px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-12">Lo que dicen nuestros clientes</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <img src="https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg" alt="Roberto Fernández" class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                                <h4 class="font-bold">Roberto Fernández</h4>
+                                <p class="text-gray-600 text-sm">Residencia Las Lomas</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">"El equipo de ARNEZ MIRANDA superó nuestras expectativas. La atención al detalle y calidad de construcción son excepcionales."</p>
+                        <div class="flex mt-4 text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <img src="https://images.pexels.com/photos/3777943/pexels-photo-3777943.jpeg" alt="María Laura Gutiérrez" class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                                <h4 class="font-bold">María Laura Gutiérrez</h4>
+                                <p class="text-gray-600 text-sm">Hotel Presidente</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">"La remodelación de nuestro hotel fue realizada en tiempo récord y con una calidad impecable. Totalmente recomendados."</p>
+                        <div class="flex mt-4 text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <img src="https://images.pexels.com/photos/3777946/pexels-photo-3777946.jpeg" alt="Carlos Andrade" class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                                <h4 class="font-bold">Carlos Andrade</h4>
+                                <p class="text-gray-600 text-sm">Planta Industrial</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">"La construcción de nuestra planta industrial fue un éxito gracias al profesionalismo y experiencia de ARNEZ MIRANDA."</p>
+                        <div class="flex mt-4 text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="script.js"></script>
+</body>
+</html>
